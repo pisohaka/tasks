@@ -10,7 +10,7 @@ def test_delete(input_val, expected):
     s_list.delete(1)
     assert s_list.to_python_list() == expected
 
-@pytest.mark.parametrize("input_val, expected", [([1], []), ([], []), ([1, 2, 1, 3, 1], [2, 3])])
+@pytest.mark.parametrize("input_val, expected", [([1], []), ([1,1,1], []), ([1, 2, 1, 3, 1], [2, 3])])
 def test_delete_all(input_val, expected):
     s_list = LinkedList()
     for val in input_val:

@@ -38,11 +38,13 @@ class LinkedList:
                 if previous_node:
                     previous_node.next = node.next
                 else:
-                    if not node.next:
+                    if node.next:
                         self.head = node.next
                     else:
                         self.head = node.next
                         self.tail = node.next
+                node = node.next
+                continue
                 if not all:
                     break
             previous_node = node
