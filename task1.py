@@ -44,6 +44,8 @@ class LinkedList:
                         self.head = node.next
                         self.tail = node.next
                 node = node.next
+                if not all:
+                    break
                 continue
                 if not all:
                     break

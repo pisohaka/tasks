@@ -2,7 +2,7 @@ import pytest
 from task1 import LinkedList, Node
 
 
-@pytest.mark.parametrize("input_val, expected", [([1], []), ([], []), ([2, 1, 3], [2, 3])])
+@pytest.mark.parametrize("input_val, expected", [([1], []), ([], []), ([2, 1, 3], [2, 3]), ([1, 1, 1], [1, 1])])
 def test_delete(input_val, expected):
     s_list = LinkedList()
     for val in input_val:
