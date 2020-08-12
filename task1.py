@@ -47,8 +47,6 @@ class LinkedList:
                 if not all:
                     break
                 continue
-                if not all:
-                    break
             previous_node = node
             node = node.next
 
